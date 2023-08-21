@@ -10,7 +10,9 @@ from src.ciphering.rot13 import Rot13
         ('ABBA nag Cheryl Baker', 'NOON ant Purely Onxre'),
     ),
 )
-class TestClass:
-    def test_rot13(self, s, expected):
-        assert Rot13.execute(self, s) == expected
+
+
+def test_rot13(s, expected):
+        parama = Rot13()
+        assert parama.execute(s) == expected
     
